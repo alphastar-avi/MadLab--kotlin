@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Centered TextView -->
+
+    <!-- Bottom Button Bar -->
+
+    <LinearLayout
+        android:id="@+id/buttonBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/changeFontButton"
+        android:layout_width="219dp"
+        android:layout_height="73dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="1"
+        android:rotationX="23"
+        android:text="FONT SIZE"
+        app:layout_constraintBottom_toTopOf="@+id/changeFontColorButton"
+        app:layout_constraintTop_toBottomOf="@id/changeBgColorButton"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/changeFontColorButton"
+        android:layout_width="215dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="36dp"
+        android:layout_weight="1"
+        android:rotationX="23"
+        android:text="FONT COLOUR"
+        app:layout_constraintTop_toBottomOf="@id/changeFontButton"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:padding="16dp"
+        android:rotationX="23"
+        android:text="DORITO!"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/buttonBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.349"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.289" />
+
+    <Button
+        android:id="@+id/changeBgColorButton"
+        android:layout_width="219dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="1"
+        android:rotationX="23"
+        android:text="CHANGE BACKGROUND"
+        app:layout_constraintBottom_toTopOf="@+id/changeFontButton"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        tools:layout_editor_absoluteX="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
