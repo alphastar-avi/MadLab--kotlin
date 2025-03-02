@@ -1,4 +1,4 @@
-package com.example.studentapp
+package com.example.ex4
 
 import android.os.Bundle
 import android.view.LayoutInflater

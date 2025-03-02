@@ -6,26 +6,21 @@
     android:padding="16dp">
 
     <EditText
-        android:id="@+id/et_marks"
+        android:id="@+id/et_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Marks" />
+        android:hint="Enter Name" />
 
     <EditText
-        android:id="@+id/et_total"
+        android:id="@+id/et_age"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Total Marks" />
+        android:hint="Enter Age"
+        android:inputType="number" />
 
     <EditText
-        android:id="@+id/et_grade"
+        android:id="@+id/et_address"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Grade" />
-
-    <EditText
-        android:id="@+id/et_status"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter Status (Pass/Fail)" />
+        android:hint="Enter Address" />
 </LinearLayout>
