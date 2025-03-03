@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Display for the calculator -->
+
+    <!-- Grid of buttons -->
+    <EditText
+        android:id="@+id/etInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Expression"
+        android:inputType="none"
+        android:textSize="24sp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:rowCount="6"
+        android:padding="8dp">
+
+        <!-- Row 1: Digits and + operator -->
+        <Button
+            android:id="@+id/btn1"
+            android:text="1"
+            android:onClick="onDigitClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn2"
+            android:text="2"
+            android:onClick="onDigitClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn3"
+            android:text="3"
+            android:onClick="onDigitClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnPlus"
+            android:text="+"
+            android:onClick="onOperatorClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Row 2: Digits and - operator -->
+        <Button
+            android:id="@+id/btn4"
+            android:text="4"
+            android:onClick="onDigitClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn5"
+            android:text="5"
+            android:onClick="onDigitClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn6"
+            android:text="6"
+            android:onClick="onDigitClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnMinus"
+            android:text="-"
+            android:onClick="onOperatorClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Row 3: Digits and * operator -->
+        <Button
+            android:id="@+id/btn7"
+            android:text="7"
+            android:onClick="onDigitClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn8"
+            android:text="8"
+            android:onClick="onDigitClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn9"
+            android:text="9"
+            android:onClick="onDigitClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnMultiply"
+            android:text="*"
+            android:onClick="onOperatorClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Row 4: 0, ., C, / operator -->
+        <Button
+            android:id="@+id/btn0"
+            android:text="0"
+            android:onClick="onDigitClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnDot"
+            android:text="."
+            android:onClick="onDigitClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnClear"
+            android:text="C"
+            android:onClick="onClearClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnDivide"
+            android:text="/"
+            android:onClick="onOperatorClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Row 5: Scientific functions (sin, cos, tan, √) -->
+        <Button
+            android:id="@+id/btnSin"
+            android:text="sin"
+            android:onClick="onFunctionClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnCos"
+            android:text="cos"
+            android:onClick="onFunctionClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnTan"
+            android:text="tan"
+            android:onClick="onFunctionClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnSqrt"
+            android:text="√"
+            android:onClick="onFunctionClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Row 6: Scientific functions (log, ln, pow) and equal -->
+        <Button
+            android:id="@+id/btnLog"
+            android:text="log"
+            android:onClick="onFunctionClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnLn"
+            android:text="ln"
+            android:onClick="onFunctionClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnPow"
+            android:text="^"
+            android:onClick="onOperatorClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnEqual"
+            android:text="="
+            android:onClick="onEqualClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </GridLayout>
+</LinearLayout>
